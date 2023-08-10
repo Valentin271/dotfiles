@@ -1,0 +1,4 @@
+gui:
+  returnImmediately: true
+commandTemplates:
+  dockerCompose: 'docker compose'

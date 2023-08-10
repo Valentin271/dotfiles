@@ -1,0 +1,9 @@
+gui:
+  showIcons: false # true would be better but seems buggy
+notARepository: 'quit'
+customCommands:
+  - key: 'F'
+    context: 'global'
+    command: 'git fetch --prune --prune-tags'
+    description: 'fetch and prune unused items'
+    loadingText: 'fetching & pruning'
