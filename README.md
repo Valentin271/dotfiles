@@ -12,3 +12,7 @@ This is just to have a backup and share it on my computers.
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [lazydocker](https://github.com/jesseduffield/lazydocker)
 - [inlyne](https://github.com/trimental/inlyne)
+
+## Font
+
+This configuration uses this font : [JetBrainsMonoNL Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFont-Regular.ttf).
