@@ -4,6 +4,9 @@
 !i3
 !polybar
 
+# Checking version
+!check-version.sh
+
 # Tools
 !lazygit
 !lazydocker
