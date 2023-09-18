@@ -1,3 +1,6 @@
 map b navigate previous
 map r reload
 map R rotate
+
+# Use clipboard (Ctrl+v) instead of X11 primary clipboard (middle mouse button)
+set selection-clipboard clipboard
