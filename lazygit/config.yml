@@ -1,5 +1,5 @@
 gui:
-  showIcons: false # true would be better but seems buggy
+  nerdFontsVersion: "3"
 notARepository: 'quit'
 customCommands:
   - key: 'F'
