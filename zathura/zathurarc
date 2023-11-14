@@ -4,3 +4,6 @@ map R rotate
 
 # Use clipboard (Ctrl+v) instead of X11 primary clipboard (middle mouse button)
 set selection-clipboard clipboard
+
+# Allows to open internet links
+set sandbox none
