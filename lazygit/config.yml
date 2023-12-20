@@ -1,7 +1,11 @@
 promptToReturnFromSubprocess: false
+
 gui:
   nerdFontsVersion: "3"
+  expandFocusedSidePanel: true
+
 notARepository: 'quit'
+
 customCommands:
   - key: 'F'
     context: 'global'
