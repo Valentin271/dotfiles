@@ -1,0 +1,14 @@
+# To symlink in ~/.cargo
+
+[alias]
+b = "build"
+c = "clippy"
+t = "test"
+
+r = "run"
+rr = "run --release"
+ex = "run --example"
+
+i = "install"
+un = "uninstall"
+rm = "remove"
