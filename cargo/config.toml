@@ -1,4 +1,4 @@
-# To symlink in ~/.cargo
+# To symlink to ~/.cargo/config.toml
 
 [alias]
 b = "build"
