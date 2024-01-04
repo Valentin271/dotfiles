@@ -5,7 +5,8 @@
 !i3
 !polybar
 
-# Checking version
+# bash
+!bash_aliases
 !check-version.sh
 
 # Tools
