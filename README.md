@@ -12,6 +12,7 @@ This is just to have a backup and share it on my computers.
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [lazydocker](https://github.com/jesseduffield/lazydocker)
 - [inlyne](https://github.com/trimental/inlyne)
+- [typos-cli](https://github.com/crate-ci/typos)
 
 ## Font
 
