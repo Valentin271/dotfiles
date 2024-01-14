@@ -4,6 +4,7 @@
 b = "build"
 c = "clippy"
 t = "test"
+nt = "nextest run"
 
 r = "run"
 rr = "run --release"
