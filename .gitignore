@@ -10,6 +10,7 @@
 !check-version.sh
 
 # Tools
+!alacritty
 !lazygit
 !lazydocker
 !inlyne

@@ -1,0 +1,9 @@
+[window]
+resize_increments = true
+
+[font]
+normal = { family = "JetBrainsMonoNL Nerd Font" }
+size = 8
+
+[mouse]
+hide_when_typing = true
