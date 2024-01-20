@@ -15,5 +15,6 @@ hide_when_typing = true
 
 [keyboard]
 bindings = [
-{ key = "Escape", mode = "Vi", action = "ToggleViMode" }
+{ key = "Escape", mode = "Vi", action = "ToggleViMode" },
+{ key = "q", mode = "Vi", action = "ToggleViMode" }
 ]
