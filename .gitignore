@@ -7,7 +7,6 @@
 
 # bash
 !bash_aliases
-!check-version.sh
 
 # Tools
 !alacritty
@@ -22,3 +21,6 @@
 
 # Code
 !cargo
+
+# Scripts
+!bin

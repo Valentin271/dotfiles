@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -f /tmp/theme.toml ]; then
+    rm /tmp/theme.toml
+else
+    cp ~/.config/alacritty/themes/alabaster_dark.toml /tmp/theme.toml
+fi
+
+touch ~/.config/alacritty/alacritty.toml
