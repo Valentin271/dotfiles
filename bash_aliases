@@ -13,7 +13,15 @@ alias ld="lazydocker"
 
 alias zathura="zathura --fork"
 
-alias fp='cd $(command fp)'
+function fp() {
+    if [ -f /tmp/theme.toml ]; then
+        theme="dark"
+    else
+        theme="light"
+    fi
+
+    cd "$(command fp --theme "$theme" "$@")" || return
+}
 
 alias c=cargo
 alias cn="cargo +nightly"
