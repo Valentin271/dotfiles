@@ -7,6 +7,7 @@ names=(
     "Lazygit"
     "Lazydocker"
     "Neovim"
+    "typos"
     "xh"
 )
 current=(
@@ -15,6 +16,7 @@ current=(
     lazygit_current
     lazydocker_current
     nvim_current
+    typos_current
     xh_current
 )
 latest=(
@@ -23,6 +25,7 @@ latest=(
     lazygit_latest
     lazydocker_latest
     nvim_latest
+    typos_latest
     xh_latest
 )
 
@@ -43,6 +46,7 @@ inlyne_current () { inlyne --version | cut -d' ' -f2; }
 lazygit_current () { lazygit --version | cut -d','  -f4 | grep -Po '=\K.*'; }
 lazydocker_current () { lazydocker --version | grep -Po 'Version: \K.*'; }
 nvim_current () { nvim --version | grep -Po 'NVIM v\K.+'; }
+typos_current () { typos --version | cut -d' ' -f2; }
 xh_current () { xh --version | head -n1 | cut -d' ' -f2; }
 
 alacritty_latest () { cargo_search alacritty; }
@@ -50,6 +54,7 @@ inlyne_latest () { cargo_search inlyne; }
 lazygit_latest () { curl -s 'https://api.github.com/repos/jesseduffield/lazygit/releases/latest' | jq -r .tag_name | tr -d v; }
 lazydocker_latest () { curl -s 'https://api.github.com/repos/jesseduffield/lazydocker/releases/latest' | jq -r .tag_name | tr -d v; }
 nvim_latest () { curl -s 'https://api.github.com/repos/neovim/neovim/releases' | jq -r '.[].tag_name' | sort -V | tail -n1 | tr -d v; }
+typos_latest () { cargo_search typos-cli; }
 xh_latest () { cargo_search xh; }
 
 cargo_search() {
