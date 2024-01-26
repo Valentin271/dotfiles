@@ -25,3 +25,8 @@ function fp() {
 
 alias c=cargo
 alias cn="cargo +nightly"
+
+# See https://doc.rust-lang.org/rustdoc/unstable-features.html#--show-coverage-calculate-the-percentage-of-items-with-documentation
+cdc() {
+    RUSTDOCFLAGS="-Zunstable-options --show-coverage" cn doc --no-deps
+}
