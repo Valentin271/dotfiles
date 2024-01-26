@@ -155,6 +155,9 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+bracketleft move workspace to output right
 bindsym $mod+bracketright move workspace to output left
 
+assign [class="thunderbird"] $ws9
+assign [class="discord"] $ws10
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
