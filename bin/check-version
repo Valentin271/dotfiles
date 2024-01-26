@@ -38,22 +38,22 @@ app_main () {
     done
 }
 
-alacritty_current () { echo $(alacritty --version | cut -d' ' -f2); }
-inlyne_current () { echo $(inlyne --version | cut -d' ' -f2); }
-lazygit_current () { echo $(lazygit --version | cut -d','  -f4 | grep -Po '=\K.*'); }
-lazydocker_current () { echo $(lazydocker --version | grep -Po 'Version: \K.*'); }
-nvim_current () { echo $(nvim --version | grep -Po 'NVIM v\K.+'); }
-xh_current () { echo $(xh --version | head -n1 | cut -d' ' -f2); }
+alacritty_current () { alacritty --version | cut -d' ' -f2; }
+inlyne_current () { inlyne --version | cut -d' ' -f2; }
+lazygit_current () { lazygit --version | cut -d','  -f4 | grep -Po '=\K.*'; }
+lazydocker_current () { lazydocker --version | grep -Po 'Version: \K.*'; }
+nvim_current () { nvim --version | grep -Po 'NVIM v\K.+'; }
+xh_current () { xh --version | head -n1 | cut -d' ' -f2; }
 
 alacritty_latest () { cargo_search alacritty; }
 inlyne_latest () { cargo_search inlyne; }
-lazygit_latest () { echo $(curl -s 'https://api.github.com/repos/jesseduffield/lazygit/releases/latest' | jq -r .tag_name | tr -d v); }
-lazydocker_latest () { echo $(curl -s 'https://api.github.com/repos/jesseduffield/lazydocker/releases/latest' | jq -r .tag_name | tr -d v); }
-nvim_latest () { echo $(curl -s 'https://api.github.com/repos/neovim/neovim/releases' | jq -r '.[].tag_name' | sort -V | tail -n1 | tr -d v); }
+lazygit_latest () { curl -s 'https://api.github.com/repos/jesseduffield/lazygit/releases/latest' | jq -r .tag_name | tr -d v; }
+lazydocker_latest () { curl -s 'https://api.github.com/repos/jesseduffield/lazydocker/releases/latest' | jq -r .tag_name | tr -d v; }
+nvim_latest () { curl -s 'https://api.github.com/repos/neovim/neovim/releases' | jq -r '.[].tag_name' | sort -V | tail -n1 | tr -d v; }
 xh_latest () { cargo_search xh; }
 
 cargo_search() {
-    echo $(cargo search $1 | head -n1 | grep -Po '= "\K[^"]+');
+    cargo search "$1" | head -n1 | grep -Po '= "\K[^"]+';
 }
 
 app_main
