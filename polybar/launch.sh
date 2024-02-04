@@ -6,4 +6,4 @@ polybar-msg cmd quit
 
 # Launch bars
 echo "---" | tee -a /tmp/polybar.log
-polybar --config=/home/user/.config/polybar/config.ini mainbar 2>&1 | tee -a /tmp/polybar.log & disown
+polybar --config=~/.config/polybar/config.ini mainbar 2>&1 | tee -a /tmp/polybar.log & disown
