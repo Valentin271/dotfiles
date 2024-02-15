@@ -5,6 +5,7 @@ import = [
 
 [window]
 resize_increments = true
+dynamic_padding = true
 
 [font]
 normal = { family = "JetBrainsMonoNL Nerd Font" }
