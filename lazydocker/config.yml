@@ -1,4 +1,5 @@
 gui:
   returnImmediately: true
+  expandFocusedSidePanel: true
 commandTemplates:
   dockerCompose: 'docker compose'
