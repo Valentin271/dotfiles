@@ -3,7 +3,7 @@
 if [ -f /tmp/theme.toml ]; then
     rm /tmp/theme.toml
 else
-    cp ~/.config/alacritty/themes/alabaster_dark.toml /tmp/theme.toml
+    cp ~/.config/alacritty/themes/enfocado_dark.toml /tmp/theme.toml
 fi
 
 touch ~/.config/alacritty/alacritty.toml

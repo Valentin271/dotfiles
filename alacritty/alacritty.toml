@@ -1,5 +1,5 @@
 import = [
-    "~/.config/alacritty/themes/alabaster.toml",
+    "~/.config/alacritty/themes/enfocado_light.toml",
     "/tmp/theme.toml",
 ]
 
