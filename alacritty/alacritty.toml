@@ -3,6 +3,9 @@ import = [
     "/tmp/theme.toml",
 ]
 
+[env]
+TERM="xterm-256color"
+
 [window]
 resize_increments = true
 dynamic_padding = true
