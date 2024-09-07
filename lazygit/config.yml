@@ -8,19 +8,7 @@ notARepository: 'quit'
 
 customCommands:
   - key: 'F'
-    context: 'global'
-    command: 'git fetch --prune --prune-tags'
-    description: 'fetch and prune unused items'
-    loadingText: 'fetching & pruning'
-
-  # workaround to override the builtin binding for these contexts
-  - key: 'F'
-    context: 'localBranches'
-    command: 'git fetch --prune --prune-tags'
-    description: 'fetch and prune unused items'
-    loadingText: 'fetching & pruning'
-  - key: 'F'
-    context: 'commits'
+    context: 'global,localBranches,commits'
     command: 'git fetch --prune --prune-tags'
     description: 'fetch and prune unused items'
     loadingText: 'fetching & pruning'
