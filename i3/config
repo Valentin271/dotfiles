@@ -183,6 +183,7 @@ bindsym $mod+u [urgent="latest"] focus
 bindsym $mod+y exec xinput --disable "DELL08D7:00 04F3:30C4 Touchpad"
 bindsym $mod+Shift+y exec xinput --enable "DELL08D7:00 04F3:30C4 Touchpad"
 bindsym Ctrl+Mod1+l exec i3lock
+bindsym Ctrl+Mod1+p exec cat ~/.ssh/id_ed25519.pub | xsel -b
 
 # launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
