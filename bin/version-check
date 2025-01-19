@@ -58,7 +58,7 @@ typos_latest () { cargo_search typos-cli; }
 xh_latest () { cargo_search xh; }
 
 cargo_search() {
-    cargo search "$1" | head -n1 | grep -Po '= "\K[^"]+';
+    cargo info "$1" 2>/dev/null | grep -Po '^version: \K.*'
 }
 
 app_main
