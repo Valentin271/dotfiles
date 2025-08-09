@@ -4,6 +4,7 @@
 # Desktop
 !i3
 !polybar
+!gsimplecal
 
 # bash
 !bash_aliases

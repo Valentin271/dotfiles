@@ -1,0 +1,5 @@
+show_weel_number = 1
+close_on_unfocus = 1
+force_lang = fr_CH.utf8
+# copy date to clipboard on double click
+external_viewer = echo -n "%d.%m.%Y" | xsel -b
